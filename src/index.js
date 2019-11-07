@@ -45,7 +45,7 @@ function create() {
   this.otherPlayersGroup = this.physics.add.group();
 
   if(!this.socket){
-    this.socket = io('https://65.92.227.192:8081');
+    this.socket = io('http://65.92.227.192:8081');
   }
   this.players = {}
   this.socket.on('currentPlayers', (players) => {
