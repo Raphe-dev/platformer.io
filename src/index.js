@@ -45,7 +45,7 @@ function create() {
   this.otherPlayersGroup = this.physics.add.group();
 
   if(!this.socket){
-    this.socket = io('https://65.92.227.192:8081', {secure: true});
+    this.socket = io('https://dull-cougar-23.localtunnel.me', {secure: true});
   }
   this.players = {}
   this.socket.on('currentPlayers', (players) => {
